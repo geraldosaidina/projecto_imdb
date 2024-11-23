@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestor de filmes IMDb</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container py-4">
+    <h1 class="text-center">Gestor de filmes IMDb</h1>
+
+    <form id="movieForm" class="my-4">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <input type="text" id="movieName" class="form-control" placeholder="Nome do filme" required>
+        </div>
+        <div class="col-md-3">
+          <input type="text" id="movieCategory" class="form-control" placeholder="Categoria">
+        </div>
+        <div class="col-md-2">
+          <input type="number" id="movieYear" class="form-control" placeholder="Ano" min="1900">
+        </div>
+        <div class="col-md-3">
+          <input type="url" id="movieImage" class="form-control" placeholder="Link para a imagem">
+        </div>
+        <div class="col-md-12 text-center">
+          <button type="submit" class="btn btn-primary">Adicionar Filme</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="my-3">
+      <input type="text" id="searchInput" class="form-control" placeholder="Pesquisar pelo nome">
+    </div>
+
+    <div id="movieCards" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
